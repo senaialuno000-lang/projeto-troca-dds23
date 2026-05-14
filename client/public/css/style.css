@@ -1,5 +1,67 @@
-.main {
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --cor-fundo: #FFFFFF;
+    --cor-texto-principal: #000000;
+    --cor-texto-inverso: #FF0000;
+    --cor-borda: #000000;
+    --cor-menu: #000000;
+    --cor-destaque: #FF0000;
+
+    --radius-padrao: 10px;
+    --fonte-principal: "Google Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto-principal);
+    background-color: var(--cor-fundo);
+}
+
+.footer-sistema {
+    margin-top: auto;
+    text-align: center;
+    background-color: var(--cor-fundo);
+    border-top: 2px solid var(--cor-borda);
+}
+
+.header-sistema {
+    background-color: var(--cor-menu);
+    color: var(--cor-texto-inverso);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid var(--cor-destaque);
+}
+
+.header-sistema h2 {
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.container {
     width: 100%;
-    height: 100vh;
-    background-color: aqua;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
 }
